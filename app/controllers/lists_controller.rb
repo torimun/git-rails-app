@@ -4,11 +4,11 @@ class ListsController < ApplicationController
   end
 
   def create
-     @list = List.new(list_params)
+    @list = List.new(list_params)
     if @list.save
       redirect_to list_path(@list.id)
     else
-      render :index #<= new から indexに変更
+      render :new
     end
   end
 
@@ -27,7 +27,7 @@ class ListsController < ApplicationController
   def update
     list = List.find(params[:id])
     list.update(list_params)
-    redirect_to list_path(list.id)
+    redirect_to list_path(list.id)  
   end
 
   def destroy

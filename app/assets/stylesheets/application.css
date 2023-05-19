@@ -21,7 +21,7 @@
 }
 
 header, h1, nav, .list-comment {
-  font-family: "Kasushan", cursive, sans-serif;
+  font-family: 'Kaushan', cursive, sans-serif;
 }
 
 header {
@@ -76,7 +76,7 @@ main {
   width: 200px;
   position: absolute;
   left: 0;
-  bototom: 0;
+  bottom: 0;
 }
 
 .list-body {
@@ -89,9 +89,8 @@ main {
 }
 
 .list-title {
-  display: block;
-  font-size: 18px;
-  overflow: block;
+  display: block;  font-size: 18px;
+  overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
